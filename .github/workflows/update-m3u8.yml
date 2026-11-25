@@ -32,7 +32,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           if [[ -n "$(git status --porcelain)" ]]; then
-            git add -A
+            git add ME/macfilter.m3u
             git commit -m "Update base URL and MAC in .m3u8 files"
             git push
           else
